@@ -1,0 +1,25 @@
+package io.github.fonaziero.clientes;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import io.github.fonaziero.clientes.model.entity.Cliente;
+import io.github.fonaziero.clientes.model.repository.ClienteRepository;
+
+@SpringBootApplication
+public class ClientesApplication {
+	
+	@Bean
+	public CommandLineRunner run(@Autowired ClienteRepository repository) {
+		return args -> {
+			Cliente cliente = new Cliente();
+		};
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(ClientesApplication.class, args);
+	}
+}
