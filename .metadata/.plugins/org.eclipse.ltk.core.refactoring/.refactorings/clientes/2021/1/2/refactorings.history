@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;clientes&apos;&#x0D;&#x0A;- Original project: &apos;clientes&apos;&#x0D;&#x0A;- Original element: &apos;clientes/src/main/java/io.github.fonaziero.clientes.ClienteApp&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;io.github.fonaziero.clientes.ClienteApp" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;io.github.fonaziero.clientes" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;io.github.fonaziero" element4="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;io.github" element5="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;io" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1609632647946" subPackages="false" version="1.0"/>
-</session>

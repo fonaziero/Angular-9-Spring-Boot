@@ -15,6 +15,6 @@
     <booleanAttribute key="spring.boot.jmx.enable" value="true"/>
     <booleanAttribute key="spring.boot.lifecycle.enable" value="true"/>
     <stringAttribute key="spring.boot.lifecycle.termination.timeout" value="15000"/>
-    <booleanAttribute key="spring.boot.livebean.enable" value="true"/>
+    <booleanAttribute key="spring.boot.livebean.enable" value="false"/>
     <stringAttribute key="spring.boot.livebean.port" value="0"/>
 </launchConfiguration>

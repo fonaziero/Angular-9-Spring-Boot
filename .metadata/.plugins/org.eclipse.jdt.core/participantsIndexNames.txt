@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-D:\Java Projetos\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\962829066.index
-\OlaMundo\src\main\java
