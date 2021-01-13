@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ServicoPrestadoService } from 'src/app/servico-prestado.service';
 import { ServicoPrestadoBusca } from './servico-prestado-busca';
 
@@ -15,7 +16,7 @@ export class ServicoPrestadoListaComponent implements OnInit {
   lista: ServicoPrestadoBusca[];
   message: string;
 
-  constructor( private service: ServicoPrestadoService ) {
+  constructor( private service: ServicoPrestadoService, private route: Router ) {
     this.meses = [1,2,3,4,5,6,7,8,9,10,11,12];
    }
 
@@ -31,7 +32,6 @@ export class ServicoPrestadoListaComponent implements OnInit {
         this.message = null;
       }
     });
-
   }
 
 }

@@ -29,12 +29,12 @@
             <td>{{ cliente.cpf }}</td>
             <td>{{ cliente.dataCadastro }}</td>
             <td>
-              <button class="btn mr-3" routerLink="/clientes-form/{{ cliente.id }}">
+              <button class="btn mr-3" routerLink="/clientes/form/{{ cliente.id }}">
                 <i class="fas fa-edit"></i>
               </button>
               <button
                class="btn"
-               routerLink="/clientes-list"
+               routerLink="/clientes/lista"
                data-toggle="modal"
                data-target="#modalDel"
                (click)="selectedCliente(cliente)"
