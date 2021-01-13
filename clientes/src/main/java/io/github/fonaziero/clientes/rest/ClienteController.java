@@ -1,9 +1,12 @@
 package io.github.fonaziero.clientes.rest;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -38,6 +41,7 @@ public class ClienteController {
 	
 	@GetMapping("{id}")
 	public Cliente acharPorId(@PathVariable Integer id) {
+		
 		return repository
 				.findById(id)
 				.orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
@@ -46,6 +50,7 @@ public class ClienteController {
 	@DeleteMapping("{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deletar(@PathVariable Integer id) {
+		
 		repository
 		.findById(id)
 		.map(cliente -> {
@@ -67,7 +72,11 @@ public class ClienteController {
 			return repository.save(clienteAtualizado);
 		})
 		.orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
-		
+	}
+	
+	@GetMapping
+	public List<Cliente> obterTodos() {
+		return repository.findAll();
 	}
 	
 }
